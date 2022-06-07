@@ -1,6 +1,6 @@
 {
   "global" : false,
   "host_template_types" : [ "EMAIL" ],
-  "label" : "dummy_group",
+  "label" : "programmable_email_baseline",
   "is_available_for_new_content" : true
 }
