@@ -1,0 +1,22 @@
+<p>(data-driven version)</p>
+<h2>Hello {{contact.firstname}}!</h2>
+
+<p>
+    New NEW Status of our offices in NAM:
+</p>
+    <ul>
+        {% set offices = crm_objects("office", "region=NAM", "city,status").results %}
+        {% for office in offices %}
+            <li>{{ office.city }} is {{ office.status }}</li>
+        {% endfor %}
+    </ul>
+
+<p>
+    Status of our offices in EMEA:
+</p>
+<ul>
+    {% for officedb in hubdb_table_rows("HSLocations", "region=EMEA") %}
+        <li>{{ officedb.city }} is {{ officedb.status }}</li>
+    {% endfor %}
+</ul>
+

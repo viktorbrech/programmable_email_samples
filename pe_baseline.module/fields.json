@@ -1,0 +1,54 @@
+[ {
+  "id" : "d0e543d3-8c40-87c1-d490-deee3b338bce",
+  "name" : "field_group",
+  "display_width" : null,
+  "label" : "Field group",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "d4e30628-8e1b-d4ac-979f-874735d9a7e6",
+    "name" : "dummy_boolean_field",
+    "display_width" : null,
+    "label" : "Boolean",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "98ba41a9-64e5-2926-ffa8-0ce67fed091b",
+    "name" : "dummy_number_field",
+    "display_width" : null,
+    "label" : "Number",
+    "required" : false,
+    "locked" : false,
+    "display" : "slider",
+    "min" : 1,
+    "max" : 5,
+    "step" : 1,
+    "prefix" : "dpre",
+    "suffix" : "dsuf",
+    "type" : "number",
+    "default" : 2
+  }, {
+    "id" : "96c774ba-4910-ff2e-97c1-c04b932783e9",
+    "name" : "dummy_text_field",
+    "display_width" : null,
+    "label" : "Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "my custom module"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "dummy_boolean_field" : false,
+    "dummy_number_field" : 2,
+    "dummy_text_field" : "my custom module"
+  }
+} ]
